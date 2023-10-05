@@ -1,5 +1,9 @@
 const iteams = document.querySelectorAll(".item");
-// console.log(iteams);
+
 const iteamArr = [...iteams];
 console.log(`Number of categories: ${iteamArr.length}`);
-console.log(iteamArr.text);
+
+iteamArr.forEach((iteam) => {
+  console.log(`Category: ${iteam.firstElementChild.textContent}`);
+  console.log(`Elements: ${iteam.lastElementChild.children.length}`);
+});
