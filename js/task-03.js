@@ -18,7 +18,7 @@ const img = images
   .map(
     (image) => `<li class"iteam-task-3" ><img
           class="image-task-3"
-          src=${image.url} width="360" heigth="200" alt=${image.alt}></li>`
+          src=${image.url} width="360" alt=${image.alt}></li>`
   )
   .join("");
 
