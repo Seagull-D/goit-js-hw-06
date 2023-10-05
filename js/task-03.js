@@ -12,12 +12,15 @@ const images = [
     alt: "Group of Horses Running",
   },
 ];
-
 const list = document.querySelector(".gallery");
 
-ingredients.forEach((iteam) => {
-  console.log(iteam);
-  const createIteam = document.createElement("li");
-  createIteam.textContent = iteam;
-  list.append(createIteam);
-});
+const img = images
+  .map(
+    (image) => `<li class"iteam-task-3" ><img
+          class="image-task-3"
+          src=${image.url} width="360" heigth="200" alt=${image.alt}></li>`
+  )
+  .join("");
+
+list.insertAdjacentHTML("beforeend", img);
+console.log(img);
