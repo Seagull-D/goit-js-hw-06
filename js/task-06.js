@@ -10,7 +10,8 @@ function ValidInput(evt) {
   console.log(evt.currentTarget.value);
   switch (evt.currentTarget.value.length) {
     case 0:
-      userInp.style.borderColor = "#bdbdbd";
+      userInp.classList.remove("invalid");
+      userInp.classList.remove("valid");
       break;
     case 6:
       userInp.classList.remove("invalid");
